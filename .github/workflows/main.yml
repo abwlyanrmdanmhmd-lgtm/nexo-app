@@ -2,11 +2,11 @@ name: Build APK
 on: [push, workflow_dispatch]
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Get Date
-        @v1
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
       - name: Install dependencies
