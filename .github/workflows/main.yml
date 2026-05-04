@@ -70,4 +70,4 @@ jobs:
         if: failure()
         with:
           name: build-logs
-          path: .buildozer/android/platform/build*/build/outputs/
+          path: .buildozer/android/platform/build*/build/outputs!
